@@ -1,0 +1,47 @@
+---
+layout: page
+title: Veranstaltung Detail 1
+---
+
+<!-- project-hero -->
+<section class="wrapper-topMargin">
+    {{ site.components | where:'title', 'veranstaltung-detail-header-1'}}
+</section>
+
+<button class="chip-small-back">Übersicht</button>
+
+<!-- info-box -->
+<section class="wrapper">
+    {{ site.components | where:'title', 'info-box-veranstaltung'}}
+</section>
+
+<!-- text -->
+<section class="text-wrapper-topMargin">
+
+    <p class="base-bold c-black">
+            Die Digitalisierung verändert Lebenswelten. Welche Auswirkungen hat die globalisierte, wissenszentrierte und zunehmend digitale Gesellschaft auf die gebaute Umwelt? Das IBA_LAB N°7 stellt am konkreten Beispiel der Heidelberger Konversionsfläche Patrick-Henry-Village die Frage, wie sich Digitalisierung und Raumstrukturen gegenseitig beeinflussen. Wie reagiert die »Wissensstadt von morgen« auf die Möglichkeiten und Herausforderungen der Digitalisierung?
+    </p>
+</section>
+
+<!-- list -->
+
+<section class="text-wrapper">
+
+        <h2 class="medium-uc-bold c-black center">Keynote</h2>
+
+        {{ site.components | where:'title', 'table-list'}}
+
+        <h2 class="medium-uc-bold c-black center">Sprecher (Auswahl)</h2>
+
+        {{ site.components | where:'title', 'table-list'}}
+
+        <h2 class="medium-uc-bold c-black center">Moderation</h2>
+
+        {{ site.components | where:'title', 'table-list'}}
+
+
+</section>
+
+
+<!-- Optional: Projekt Sponsoren -->
+{{ site.components | where:'title', 'project-sponsores'}}

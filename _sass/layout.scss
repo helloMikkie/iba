@@ -1,0 +1,49 @@
+.wrapper{
+    max-width: 1024px; 
+    margin: map-get($spaces, normal) auto;    
+}
+
+.text-wrapper{
+    max-width: 48em; 
+    margin: map-get($spaces, normal) auto; 
+}
+
+.text-wrapper-topMargin{
+    max-width: 48em; 
+    margin: map-get($spaces, large) auto map-get($spaces, normal) auto;
+}
+
+.text-wrapper-bottomMargin{
+    max-width: 48em; 
+    margin: map-get($spaces, normal) auto map-get($spaces, large) auto; 
+}
+
+
+.wrapper-topMargin{
+    max-width: 1024px; 
+    margin: map-get($spaces, large) auto map-get($spaces, normal) auto;
+}
+
+.wrapper-bottomMargin{
+    max-width: 1040px; 
+    margin: map-get($spaces, normal) auto map-get($spaces, large) auto;
+}
+
+// 
+
+.topMargin{
+    margin: map-get($spaces, large) 0 map-get($spaces, normal) 0;
+}
+
+.bottomMargin{
+    margin: map-get($spaces, normal) 0 map-get($spaces, large) 0; 
+}
+
+.margin-normal{
+    margin: map-get($spaces, normal) 0 map-get($spaces, normal) 0; 
+}
+
+.margin-large{
+    margin: map-get($spaces, large) 0 map-get($spaces, large) 0; 
+}
+

@@ -1,0 +1,88 @@
+
+.box-kalender{
+    .box-kalender-wrapper {
+        max-width: 1024px;
+        height: 256px; 
+        margin: map-get($spaces, x-small ) auto; 
+        display: flex;
+        cursor: pointer; 
+        .event-info{
+            width: 256px; 
+            padding: 1em; 
+            flex-shrink: 0; 
+            display:flex;
+            flex-direction: column; 
+            justify-content: space-between; 
+            .location{
+                margin-bottom: 8px; 
+            }
+        }
+        .event-image{
+            width: 256px; 
+            height: 256px;
+            flex-shrink: 0;
+            filter: grayscale(100%);   
+            img{
+                object-fit: cover;
+                width: 256px; 
+                height: 256px;  
+            }
+        }
+        .event-title{
+            width: 512px;
+            padding: 1em; 
+            h4{
+                margin-bottom: 16px; 
+            }
+            h2{
+                margin-bottom: 8px; 
+            }
+            p{
+                line-height: 1.3; 
+            } 
+        }
+    }
+}
+
+.box-kalender-yellow{
+    @extend .box-kalender;
+    @include gradient(yellow);
+    &:hover{
+        // @include gradient(mid-gray);
+    }
+}
+
+.box-kalender-dark-gray{
+    @extend .box-kalender;
+    @include gradient(dark-gray);
+    &:hover{
+        // @include gradient(mid-gray);
+    }
+}
+
+
+.box-kalender-mid-gray{
+    @extend .box-kalender;
+    @include gradient(mid-gray);
+    &:hover{
+        // @include gradient(mid-gray);
+    }
+}
+
+
+.box-kalender-light-gray{
+    @extend .box-kalender;
+    @include gradient(light-gray);
+    &:hover{
+        // @include gradient(mid-gray);
+    }
+}
+
+
+.box-kalender-pale-white{
+    @extend .box-kalender;
+    @include gradient(pale-white);
+    &:hover{
+        // @include gradient(mid-gray);
+    }
+}

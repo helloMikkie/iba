@@ -1,0 +1,197 @@
+.cta{
+    outline: none;
+    border-radius: 2px; 
+    line-height: 1em; 
+    transition: all 0.2s;
+    text-transform: uppercase;
+    font-family: map-get($fontFamilies,bold );
+    cursor: pointer;
+}
+
+// sizes
+
+.cta-small{
+    @extend .cta;
+    @include typeRatio(x-small);
+    padding: .7em .8em .3em .8em ;
+    letter-spacing: map-get($tracking,tracked);
+}
+
+.cta-large{
+    @extend .cta;
+    @include typeRatio(base);
+    padding: 0.6em 1.8em 0.4em 1.8em ;
+    letter-spacing: map-get($tracking,normal);
+}
+
+// Buttons
+
+.cta-small-white{
+    @extend .cta-small;
+    @include skin(white);
+    color: map-get($colors, dark-gray );
+    border: 1px solid map-get($colors, mid-gray );
+    &:hover{
+        color:map-get($colors, black); 
+        border-color: map-get($colors, black); 
+    }
+}
+
+.cta-small-yellow{
+    @extend .cta-small;
+    @include skin(yellow);
+    border: none; 
+    &:hover{
+        @include skin(dark-yellow);
+        color:map-get($colors, black); 
+    }
+}
+.cta-small-black{
+    @extend .cta-small;
+    @include skin(black-white);
+    border: none; 
+    &:hover{
+        color:map-get($colors, light-gray); 
+    }
+}
+
+.cta-large-yellow{
+    @extend .cta-large;
+    @include skin(yellow);
+    border: none; 
+    &:hover{
+        @include skin(dark-yellow);
+        color:map-get($colors, black); 
+    }
+}
+.cta-large-white{
+    @extend .cta-large;
+    @include skin(white);
+    border: 1px solid map-get($colors, mid-gray );
+    color: map-get($colors, dark-gray );
+    &:hover{
+        color:map-get($colors, black); 
+        border-color: map-get($colors, black); 
+    }
+}
+.cta-large-black{
+    @extend .cta-large;
+    @include skin(black-white);
+    border: none; 
+    &:hover{
+        color:map-get($colors, light-gray);   
+    }
+}
+
+// Chips
+
+.chip-small-left{
+    @extend .cta-small;
+    @include skin(white);
+    border: none; 
+    color: map-get($colors, dark-gray );
+    // border: 1px solid map-get($colors, mid-gray );
+    position: relative; 
+    margin-left: 16px; 
+    &:before{
+        content: url(assets/grafik/left.svg);
+        position: absolute; 
+        left: -12px; 
+        top: 6px; 
+    }
+    &:hover{
+        color:map-get($colors, black); 
+        border-color: map-get($colors, black);  
+    }
+}
+
+
+.chip-small-right{
+    @extend .cta-small;
+    @include skin(white);
+    border: none; 
+    color: map-get($colors, dark-gray );
+    position: relative; 
+    margin-right: 16px; 
+    &:before{
+        content: url(assets/grafik/right.svg);
+        position: absolute; 
+        right: -12px; 
+        top: 6px; 
+    }
+    &:hover{
+        color:map-get($colors, black); 
+        border-color: map-get($colors, black);  
+    }
+}
+
+
+// Extra Buttons
+
+
+.cta-rounded{
+    @extend .cta-small;
+    border: none; 
+    border-radius: 100%;
+    width: 32px; 
+    height: 32px;  
+    padding: 4px 4px 8px 4px; 
+    text-align: center; 
+    cursor: pointer; 
+    @include skin(yellow);
+    @include typeRatio(base);
+    &:hover{
+        @include skin(dark-yellow);
+        color:map-get($colors, black); 
+    }
+}
+
+.cta-maximize{
+    @extend .cta-small;
+    border: none; 
+    border-radius: 100%;
+    width: 40px; 
+    height: 40px;  
+    cursor: pointer; 
+    @include skin(yellow);
+    background-image: url(assets/grafik/maximize.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover{
+        @include skin(dark-yellow);
+    }
+}
+
+
+// Projekt-Übersicht: fixierter Button Toggle Ansichten
+
+.projekte-toggle{
+    position: fixed;
+    bottom: 28px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; 
+}
+
+
+.chip-small-back{
+    @extend .cta-small;
+    @include skin(white);
+    border: none; 
+    color: map-get($colors, dark-gray );
+    // border: 1px solid map-get($colors, mid-gray );
+    position: fixed;
+    top: 88px; 
+    left: 8px; 
+    margin-left: 16px; 
+    &:before{
+        content: url(assets/grafik/left.svg);
+        position: absolute; 
+        left: -12px; 
+        top: 6px; 
+    }
+    &:hover{
+        color:map-get($colors, black); 
+        border-color: map-get($colors, black);  
+    }
+}

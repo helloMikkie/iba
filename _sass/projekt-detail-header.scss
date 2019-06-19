@@ -1,0 +1,25 @@
+
+// Hero Header Projekt Detail
+.project-detail-header{
+    max-width: 64em;
+    margin: 0px auto ; 
+    position: relative;  
+    height: 512px; 
+    .project-card-detail {
+        @include gradient(yellow);
+        position: absolute; 
+        transform: translateY(50%);
+        z-index: 1;
+    }
+    .image{
+        overflow: hidden; 
+        width: 87.5%; 
+        height: 512px;
+        position: absolute; 
+        right: 0;
+        background-image: url(assets/images/project_01.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+}

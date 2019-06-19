@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="358px" height="267px" viewBox="0 0 358 267" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="-3 4 62 4 30.7596899 62"></polygon>
+    </defs>
+    <g id="Pages-Complete-1280" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mediathek" transform="translate(-499.000000, -109.000000)">
+            <g id="Group" transform="translate(499.000000, 109.000000)">
+                <path d="M114.685438,66 L80,177 L149,177 L114.685438,66 Z M68.2020202,220.970364 L53.4533333,267 L0,267 L84.7921616,0 L147.832141,0 L211,209.438253 L176.587818,267 L162.576566,220.970364 L68.2020202,220.970364 Z" id="Stroke-14-Copy-2" fill="#F8E71C"></path>
+                <g id="#029-Forum-Adenauerplatz_RENDERING-Copy-14" transform="translate(299.000000, 48.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#F8E71C" transform="translate(29.500000, 33.000000) scale(-1, -1) rotate(-270.000000) translate(-29.500000, -33.000000) " xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

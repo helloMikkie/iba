@@ -1,0 +1,94 @@
+
+.status-label{
+    position: relative;
+    margin-top: map-get($spaces, medium);
+    &:before{
+        position: absolute; 
+        top: -32px; 
+        left: 50%; 
+        font-size: 64px;
+        text-transform: uppercase;
+        transform: translateX(-50%); 
+        color: map-get($colors, yellow);
+    }
+}
+
+.k-status{
+    @extend .status-label;
+    &:before{
+        content: 'K';
+    }
+}
+
+
+.p-status{
+    @extend .status-label;
+    &:before{
+        content: 'p';
+    }
+}
+
+
+.l-status{
+    @extend .status-label;
+    &:before{
+        content: 'l';
+    }
+}
+
+
+.status-label-small{
+    position: relative; 
+    &:before{
+        font-size: map-get($fontSizes, base);
+        text-transform: uppercase;
+        margin-right: 8px; 
+        color: map-get($colors, black ); 
+        font-family: map-get($fontFamilies, bold);
+    }
+}
+.k-status-small-yellow{
+    @extend .status-label-small;
+    &:before{
+        content: 'K';
+        color: map-get($colors, dark-yellow );
+    }
+}
+.k-status-small-black{
+    @extend .status-label-small;
+    &:before{
+        content: 'K';
+        color: map-get($colors, black);
+    }
+}
+
+.p-status-small-yellow{
+    @extend .status-label-small;
+    &:before{
+        content: 'p';
+        color: map-get($colors, dark-yellow );
+    }
+}
+.p-status-small-black{
+    @extend .status-label-small;
+    &:before{
+        content: 'p';
+        color: map-get($colors, black );
+    }
+}
+
+
+.l-status-small-yellow{
+    @extend .status-label-small;
+    &:before{
+        content: 'l';
+        color: map-get($colors, dark-yellow );
+    }
+}
+.l-status-small-black{
+    @extend .status-label-small;
+    &:before{
+        content: 'l';
+        color: map-get($colors, black );
+    }
+}

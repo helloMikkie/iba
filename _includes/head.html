@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="{{ site.lang }}">
+
+    <head>
+
+        {% if page.is_home %}
+        <title>{{ site.title }}</title>
+        <meta name="description" content="{{ site.description }}">
+        {% else %}
+        <title>{{ page.title }} &#8211; {{ site.title }}</title>
+        {% endif %}
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+
+        
+        
+        {% if site.css == 'inline' %}
+        <style>
+            {% capture inline-styles %}
+            {% include app.scss %}
+            {% endcapture %}
+            {{ inline-styles | scssify }}
+        </style>
+        {% else %}
+        <link href="/css/app.css" rel="stylesheet">
+        
+
+        {% endif %}
+
+        <!-- <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' /> -->
+
+    </head>
+
+    <body>

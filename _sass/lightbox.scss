@@ -1,0 +1,34 @@
+.lightbox{
+    background-color: map-get($colors, black );
+    width: 100%; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    .video{
+        width: 1024px;
+        height: 576px; 
+        iframe{
+            width: 100%;  
+            height: 100%; 
+           border: none; 
+           margin-bottom: 32px; 
+        }
+    }
+    .ikon-close-lightbox{
+        position: absolute; 
+        top:8px; 
+        right: -8px; 
+        transform: translateX(-50%);
+        width: 48px; 
+        stroke-width: 1.5px; 
+        stroke: map-get($colors,white ); 
+        cursor: pointer;
+        transition: all .2s; 
+        &:hover{
+            stroke: map-get($colors,mid-gray );  
+        }
+    }
+    
+}

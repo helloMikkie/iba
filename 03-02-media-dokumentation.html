@@ -1,0 +1,42 @@
+---
+layout: page
+title: Dokumentation
+---
+
+<section class="wrapper-topMargin">
+<!-- Header -->
+
+{{ site.components | where:'title', 'header-dokumentation'}}
+
+</section>
+
+
+<!-- Lab -->
+<section class="topMargin">
+{{ site.components | where:'title', 'media-title-lab'}}
+</section>
+
+
+{{ site.cards | where:'title', 'card-media-lab'}}
+
+
+<!-- Summit -->
+<section class="topMargin">
+{{ site.components | where:'title', 'media-title-summit'}}
+</section>
+
+{{ site.cards | where:'title', 'card-media-summit'}}
+
+<!-- Logbuch -->
+<section class="topMargin">
+    {{ site.components | where:'title', 'media-title-logbuch'}}
+    </section>
+
+    {{ site.cards | where:'title', 'card-media-logbuch'}}
+
+    <!-- Magazin -->
+<section class="topMargin">
+    {{ site.components | where:'title', 'media-title-magazin'}}
+</section>
+
+{{ site.cards | where:'title', 'card-media-magazin'}}

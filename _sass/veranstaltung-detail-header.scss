@@ -1,0 +1,99 @@
+
+
+
+// Hero Header Veranstaltung Detail
+.veranstaltung-large-header{
+    max-width: 64em;
+    margin: 0px auto ; 
+    position: relative;  
+    height: 512px; 
+    .veranstaltung-card-detail {
+        @include gradient(yellow);
+        position: absolute; 
+        transform: translateY(50%);
+        z-index: 1;
+        width: 256px; 
+        height: 256px; 
+        border-radius: 2px;
+        padding: 4px; 
+        display: flex;
+        align-items: center;
+        .veranstaltung-text{
+            text-align: center;
+            h2{
+                margin-bottom: 16px; 
+             }
+            }
+        }
+    .image{
+        overflow: hidden; 
+        width: 87.5%; 
+        height: 512px;
+        position: absolute; 
+        right: 0;
+        background-image: url(assets/images/collection/event-06.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+
+
+//  hero sma MIT Bild
+.veranstaltung-small-header{
+    max-width: 64em;
+    margin: 0px auto ; 
+    position: relative;  
+    height: 384px; 
+    display: flex; 
+    article{
+        @include gradient(yellow);
+        width:  37.5%;
+        padding: 32px; 
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        .text{
+            text-align: center;
+            h2{
+                margin-bottom: 16px; 
+            }
+            h3{
+                line-height: 1.2; 
+            }
+        }
+    }
+    .image {
+        width: 62.5%; 
+        height: 100%;
+        background-image: url(assets/images/project_01.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+//  hero subpages OHNE Bild
+
+.text-header{
+    max-width: 64em;
+    margin: 0px auto ; 
+    position: relative; 
+    padding: 64px; 
+    @include gradient(yellow);
+    height: 384px;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+    .text{
+        h2{
+            text-align: center;
+            max-width: 768px;
+            margin-bottom: 48px; 
+        } 
+        h3{
+    
+    }
+    
+    }
+}

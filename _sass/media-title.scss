@@ -1,0 +1,43 @@
+
+.media-title{
+    height: 320px; 
+    background-repeat: no-repeat;
+  
+    background-position-x: 25vw; 
+    article{ 
+        max-width: 64em;
+        margin: 0 auto;
+        height: 100%; 
+        }    
+    h2{
+        padding-top: 128px;
+    }
+    p{
+        max-width: 768px; 
+        margin: 16px auto 0 auto;
+    }
+}
+
+.media-title-lab{
+    @extend .media-title;
+    background-image: url(assets/grafik/media-titles/lab.svg);
+    
+}
+
+.media-title-summit{
+    @extend .media-title;
+    background-image: url(assets/grafik/media-titles/summit.svg);
+    
+}
+
+.media-title-logbuch{
+    @extend .media-title;
+    background-image: url(assets/grafik/media-titles/logbuch.svg);
+    
+}
+
+.media-title-magazin{
+    @extend .media-title;
+    background-image: url(assets/grafik/media-titles/magazin.svg);
+    
+}

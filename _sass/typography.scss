@@ -1,0 +1,223 @@
+body{
+    color: map-get($colors, dark-gray);
+    font-family: map-get($fontFamilies, regular); 
+    word-spacing: map-get($wordSpacings, normal);
+}
+
+//  Colors Typo
+.c-black{
+    color: map-get($colors, black);
+}
+
+.c-yellow{
+   color: map-get($colors, yellow);
+}
+
+.c-dark-yellow{
+    color: map-get($colors, dark-yellow);
+ }
+
+.c-dark-gray{
+    color: map-get($colors, dark-gray);
+ }
+ .c-mid-gray{
+    color: map-get($colors, mid-gray);
+ }
+ .c-light-gray{
+    color: map-get($colors, light-gray);
+ }
+
+ .c-white{
+    color: map-get($colors, white);
+ }
+ .c-pale-white{
+    color: map-get($colors, pale-white);
+ }
+
+
+
+// Type Ratio: font-size, letter-spacing ...
+
+.x-small {
+    @include typeRatio(x-small);
+    letter-spacing: map-get($tracking, normal);
+}
+
+.x-small-bold {
+    @include typeRatio(x-small);
+    letter-spacing: map-get($tracking, normal);
+    font-family: map-get($fontFamilies, bold);
+}
+
+.x-small-uc {
+    @include typeRatio(x-small);
+    letter-spacing: map-get($tracking, normal);
+    text-transform: uppercase; 
+}
+.x-small-uc-bold {
+    @include typeRatio(x-small);
+    letter-spacing: map-get($tracking, normal);
+    text-transform: uppercase; 
+    font-family: map-get($fontFamilies, bold);
+}
+// 
+
+.small{
+    @include typeRatio(small);
+    letter-spacing: map-get($tracking, normal);
+}
+.small-bold{
+    @include typeRatio(small);
+    letter-spacing: map-get($tracking, normal);
+    font-family: map-get($fontFamilies, bold);
+}
+
+.small-uc{
+    @include typeRatio(small);
+    letter-spacing: map-get($tracking, normal);
+    text-transform: uppercase;
+}
+.small-uc-bold{
+    @include typeRatio(small);
+    letter-spacing: map-get($tracking, normal);
+    text-transform: uppercase;
+    font-family: map-get($fontFamilies, bold);
+}
+
+// 
+
+
+.base{
+    @include typeRatio(base);
+    letter-spacing: map-get($tracking, normal);
+}
+
+.base-bold{
+    @include typeRatio(base);
+    letter-spacing: map-get($tracking, normal);
+    font-family: map-get($fontFamilies, bold);
+}
+
+.base-uc {
+    @include typeRatio(base);
+    letter-spacing: map-get($tracking, normal);
+    text-transform: uppercase;
+}
+
+.base-uc-bold {
+    @include typeRatio(base);
+    letter-spacing: map-get($tracking, normal);
+    text-transform: uppercase;
+    font-family: map-get($fontFamilies, bold);
+}
+
+// 
+.medium{
+
+    @include typeRatio(medium);
+    letter-spacing: map-get($tracking, normal);
+}
+.medium-bold{
+
+    @include typeRatio(medium);
+    letter-spacing: map-get($tracking, normal);
+    font-family: map-get($fontFamilies, bold);
+}
+.medium-uc{
+
+    @include typeRatio(medium);
+    letter-spacing: map-get($tracking, normal);
+    text-transform: uppercase;
+}
+.medium-uc-bold{
+
+    @include typeRatio(medium);
+    text-transform: uppercase;
+    letter-spacing: map-get($tracking, normal);
+    font-family: map-get($fontFamilies, bold);
+}
+
+// 
+.large{
+    @include typeRatio(large);
+    letter-spacing: map-get($tracking, tight);
+}
+.large-uc{
+    @include typeRatio(large);
+    letter-spacing: map-get($tracking, tight);
+    text-transform: uppercase;
+}
+.large-bold{
+    @include typeRatio(large);
+    letter-spacing: map-get($tracking, tight);
+    font-family: map-get($fontFamilies, bold);
+
+}
+.large-uc-bold{
+    @include typeRatio(large);
+    letter-spacing: map-get($tracking, tight);
+    text-transform: uppercase;
+    font-family: map-get($fontFamilies, bold);
+}
+
+// 
+.xx-large{
+    @include typeRatio(xx-large);
+    letter-spacing: map-get($tracking, tight);
+}
+.xx-large-uc{
+
+    @include typeRatio(xx-large);
+    letter-spacing: map-get($tracking, tight);
+    text-transform: uppercase;
+}
+.xx-large-bold{
+    @include typeRatio(xx-large);
+    letter-spacing: map-get($tracking, tight);
+    font-family: map-get($fontFamilies, bold);
+}
+.xx-large-uc-bold{
+    @include typeRatio(xx-large);
+    letter-spacing: map-get($tracking, tight);
+    text-transform: uppercase;
+    font-family: map-get($fontFamilies, bold);
+}
+// 
+
+.mega{
+    @include typeRatio(mega);
+    letter-spacing: map-get($tracking, tight);
+}
+.mega-uc{
+    @include typeRatio(mega);
+    letter-spacing: map-get($tracking, tight);
+    text-transform: uppercase;
+}
+.mega-bold{
+    @include typeRatio(mega);
+    letter-spacing: map-get($tracking, tight);
+    font-family: map-get($fontFamilies, bold);
+}
+.mega-uc-bold{
+    @include typeRatio(mega);
+    letter-spacing: map-get($tracking, tight);
+    text-transform: uppercase;
+    font-family: map-get($fontFamilies, bold);
+}
+
+
+// ***** Utilities *******
+
+.bold {
+    font-family: map-get($fontFamilies, bold);
+    
+}
+.center{
+    text-align: center;
+
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+

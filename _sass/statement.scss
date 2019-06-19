@@ -1,0 +1,60 @@
+.statement-image{
+    padding: 32px;
+    @include gradient(yellow);
+    .text{
+        margin-bottom: 48px; 
+    }
+    .author{ 
+        h4{
+            margin-bottom: 8px; 
+        }
+    }
+    .statement-wrapper{
+        max-width: 1024px;
+        margin: 0 auto; 
+        position: relative; 
+        .inner-wrapper{
+            margin: 0 auto; 
+            max-width: 48em; 
+        }
+        .author-image{
+            border: 2px solid map-get($colors,yellow );
+            border-radius: 100%; 
+            width: 128px;
+            height: 128px; 
+            
+            overflow: hidden; 
+            position: absolute;
+            right: -64px;  
+            top: 50%; 
+            transform: translateY(-50%);
+            box-shadow: 2px 10px 10px  rgba(223, 200, 0, 0.5); 
+            img{
+                filter: grayscale(100%);
+            }
+        }
+    }
+    
+}
+
+.statement{
+    padding: 32px;
+    @include gradient(yellow);
+    
+    
+    .statement-wrapper{
+        max-width: 1024px;
+        margin: 0 auto; 
+        position: relative; 
+        .inner-wrapper{
+            margin: 0 auto; 
+            max-width: 48em; 
+            .text{
+                margin-bottom: 32px; 
+            }
+        }
+        
+    }
+    
+}
+

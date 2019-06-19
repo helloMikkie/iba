@@ -1,0 +1,94 @@
+
+// links
+  %links{
+    text-decoration: none;
+    // font-family: map-get($fontFamilies, bold);
+    color: map-get($colors, dark-gray);
+    cursor: pointer; 
+    
+  }
+
+  .link {
+      @extend %links;
+      border-bottom: 2px solid map-get($colors, yellow ); 
+  }
+
+  .link-yellow{
+    @extend %links;
+    border-bottom: 2px solid map-get($colors, black);
+    color: map-get($colors, black);
+    &:hover{
+      color:map-get($colors, dark-gray );
+    }
+  }
+
+  .link-uc{
+    @extend %links;
+    text-transform: uppercase;
+    font-family: map-get($fontFamilies, bold);
+    letter-spacing: map-get($tracking, tracked );
+    transition: color 0.2s;
+    &:hover{
+        color:map-get($colors, black ); 
+        } 
+  }
+
+  .link-uc-white{
+    @extend %links;
+    text-transform: uppercase;
+    font-family: map-get($fontFamilies, bold);
+    letter-spacing: map-get($tracking, tracked );
+    transition: color 0.2s;
+    color: map-get($colors, white);
+    &:hover{
+        color:map-get($colors, light-gray ); 
+        } 
+  }
+  
+
+
+// ikons
+
+%svg{
+    stroke: map-get($colors, dark-gray);
+    stroke-width: 1.2;
+    stroke-linecap:round; 
+    stroke-linejoin:round;
+    
+}
+
+  .ikon-svg{
+      @extend %svg;
+
+  }
+
+  .ikon-outline{
+    @extend %svg;
+    fill: none;
+    transition: stroke 0.3s;
+    cursor: pointer; 
+    &:hover{
+        stroke:map-get($colors, black);
+    }
+  }
+
+
+
+// Utilities für Backgraund Image
+
+.bg-cover{
+  background-size: cover;
+}
+.bg-contain{
+  background-size: contain;
+  background-position-x: 100%;
+}
+
+.bg-center{
+  background-size: 30%;
+  background-position: 50% 100%;
+}
+
+// .bg-left{
+//   // background-position: 65% 0;
+// }

@@ -1,0 +1,81 @@
+.footer {
+	@include skin(mid-gray);
+	margin-top: 128px;
+	.footer-bar {
+		@include skin(white);
+		.footer-wrapper {
+            width: 1024px;
+    
+			margin: 0px auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+            padding-bottom: 16px;
+			.footer-links {
+				margin-left: auto;
+				padding-right: 8px;
+
+				a {
+					padding-left: 16px;
+				}
+			}
+		}
+	}
+	.inner {
+		max-width: 1024px;
+		margin: 0 auto;
+		padding: 32px 0 16px 0;
+		display: flex;
+
+		justify-content: space-between;
+
+		.contact {
+			.adress {
+				margin-bottom: 48px;
+				p {
+					letter-spacing: map-get($tracking, tracked);
+					margin-bottom: 32px;
+				}
+				ul {
+					margin-bottom: 8px;
+				}
+				a {
+					color: white;
+				}
+			}
+			.privacy {
+				a {
+					margin-right: 16px;
+				}
+			}
+		}
+
+		.links-socialMedia {
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-end;
+			margin-left: auto;
+			.youtube-ikon {
+				height: 28px;
+				fill: white;
+				padding-top: 4px;
+			}
+			.twitter-ikon {
+				height: 30px;
+				fill: white;
+				margin-left: 32px;
+			}
+			.facebook-ikon {
+				height: 32px;
+				fill: white;
+				margin-left: 32px;
+			}
+			.instagram-ikon {
+				height: 32px;
+				padding-top: 4px;
+				fill: white;
+				margin-left: 32px;
+			}
+		}
+	}
+}

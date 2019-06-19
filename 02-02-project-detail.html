@@ -1,0 +1,60 @@
+---
+layout: page
+title: Projekt Detail
+---
+
+<!-- project-hero -->
+<section class="wrapper-topMargin">
+    {{ site.components | where:'title', 'project-detail-header'}}
+</section>
+
+<button class="chip-small-back">Übersicht</button>
+
+<!-- info-box -->
+<section class="wrapper">
+    {{ site.components | where:'title', 'info-box'}}
+</section>
+
+<!-- text -->
+<section class="text-wrapper-topMargin">
+
+    <h3 class="medium-uc-bold c-black center margin-normal">Studentisches Leben und Lernen 
+        in Heidelberg</h3>
+    <p class="base">
+        Auf der Konversionsfläche »Hospital« im Stadtteil Rohrbach entsteht bis voraussichtlich 2019 mit dem »Collegium Academicum « ein Studierendenwohnheim der anderen Art. Das selbstverwaltete Wohnen von und für etwa 200 Studierende wird auf unterschiedlichen Ebenen gesellschaftlicher Verantwortung gerecht. Besonders hervorzuheben ist das Bildungskonzept, das in einer Art »Propädeutikum« in das Haus integriert wird.
+    </p>
+</section>
+
+<!-- statement -->
+<section class="margin-normal">
+    {{ site.components | where:'title', 'statements-image'}}
+</section>
+
+
+<!-- text -->
+
+<section class="text-wrapper">
+
+    <p class="base">
+            Im Bestandsgebäude stehen dafür bis zu 50 Plätze zur Verfügung. Zudem soll projektbasiertes Lernen in der Nachbarschaft, im Stadtteil und in der Stadt angeboten werden. Das »Collegium Academicum« folgt den Prinzipien der Suffizienz (der Qualität des Auskömmlichen), was sich in dem viergeschossigen Holzbau zum Beispiel in einer flexiblen Wohnraumgestaltung niederschlägt. Der Architekt – Hans Drexler aus Frankfurt – wurde mit Hilfe der IBA über ein Werkstattverfahren ausgewählt und hat entschieden dazu beigetragen, dass etwa 2,2 Mio. Euro seitens des Bundesbauministeriums im Förderprogramm »Variowohnungen« der Forschungsinitiative »ZukunftBAU« sichergestellt werden konnten. Hinzu kommen Forschungsmittel der Deutschen Bundesstiftung Umwelt. Die Finanzierung über Direktkredite nach dem Modell des Mietshäuser Syndikats ist eine Aufgabe, der sich die Gruppe mit ehrenamtlichem Engagement und Unterstützung der IBA wie der Stadt Heidelberg tagtäglich stellt. Das Projekt ist Beispiel für einen gelungen bottom-up-Prozess, bei dem die Ideengeber zu Bauherren werden und zukünftige Nutzer mit Hilfe der IBA Heidelberg zu Trägern von Baukultur avancieren.
+    </p>
+    </section>
+
+    <!-- image-slider -->
+    <section class="topMargin"> 
+            {{ site.components | where:'title', 'image-slider'}}
+    </section>
+<!-- process-slider -->
+    <section class="margin-large">
+
+            {{ site.components | where:'title', 'process-slider'}}
+
+    </section>
+
+
+  <section class="">
+            {{ site.cards | where:'title', 'project-report'}}
+
+</section>
+
+    {{ site.components | where:'title', 'project-sponsores'}}

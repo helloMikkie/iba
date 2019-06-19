@@ -1,0 +1,35 @@
+---
+layout: page
+title: Projekt Übersicht
+---
+
+<!-- Themen-Filter -->
+
+<section class="wrapper-topMargin">
+
+{{ site.components | where:'title', 'themen-overlay'}}
+
+<!-- Map -->
+</section>
+    {{ site.components | where:'title', 'map'}}
+</section>
+
+
+<button class="cta-large-black projekte-toggle">Projektansicht</button>
+
+
+<section class="text-wrapper-topMargin">
+    <p class="base">
+        Eine Internationale Bauausstellung lebt von ihren Bauvorhaben. Deswegen fließen die personellen und finanziellen Ressourcen der IBA insbesondere in die Qualifizierung der Projektideen zum Motto »Wissen schafft Stadt«. <span class="base-uc-bold c-black">Kandidaten</span>  werden zu <span class="base-uc-bold c-black">Projekten,</span>  indem das IBA-Büro gemeinsam mit externen Experten bei der inhaltlichen Konzeption, der (Bau-)Planung, der Kommunikation mit Verwaltung und Öffentlichkeit und der Drittmittelakquisition unterstützt. 
+        Projekte und Kandidaten machen die IBA-Themen konkret.
+    </p>
+</section>
+
+
+<!-- Projekt Cards Grid -->
+
+<section class="topMargin">
+{{ site.cards | where:'title', 'project-cards'}}
+
+
+</section>

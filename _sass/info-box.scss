@@ -1,0 +1,27 @@
+
+.info-box-wrapper{
+    // border: 1px solid red;
+    max-width: 64em;
+    display: flex;
+    flex-wrap: wrap;
+    article{
+        min-width: 256px;
+        padding: 8px;
+        
+        h4{
+            margin-bottom: 16px;
+        }
+        .inner{
+            border-bottom: 1px solid map-get($colors, black);
+            padding-bottom: 16px; 
+            padding-top: 8px; 
+            height: 100%; 
+            div svg{
+                margin-right: 16px; 
+            }
+        }
+        p{
+            line-height: 1.3;
+        }
+    }
+}

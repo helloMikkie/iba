@@ -1,0 +1,11 @@
+.logo-wrapper{
+    display: flex;
+    flex-wrap: wrap; 
+    img{
+        // border: 1px solid blue; 
+        width: 25%;
+        height: 128px; 
+        object-fit: contain;
+        opacity: 0.8; 
+    }
+}

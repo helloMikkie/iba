@@ -1,0 +1,13 @@
+.horizontal-scroll-wrapper{
+    height: 512px; 
+    overflow: auto;
+    white-space: nowrap;
+    div{
+    height: 100%;
+    display: inline-block;
+    padding-right: 4px;
+    img{
+        height: 100%; 
+    }
+  }
+}

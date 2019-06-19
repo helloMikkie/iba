@@ -1,0 +1,26 @@
+---
+layout: page
+title: Veranstaltungen
+---
+
+<section class="wrapper-topMargin">
+<!-- Header -->
+
+{{ site.components | where:'title', 'header-veranstaltungen'}}
+
+</section>
+
+<!-- Aktuelle Veranstaltungen -->
+<h2 class="base-uc-bold c-black center topMargin">Aktuell</h2>
+
+{{ site.components | where:'title', 'box-kalender-yellow'}}
+{{ site.components | where:'title', 'box-kalender-light-gray'}}
+{{ site.components | where:'title', 'box-kalender-mid-gray'}}
+
+
+<!-- Preview Veranstaltungscards -->
+
+<h2 class="base-uc-bold c-black center topMargin">Vorschau</h2>
+
+
+{{ site.cards | where:'title', 'card-vorschau'}}

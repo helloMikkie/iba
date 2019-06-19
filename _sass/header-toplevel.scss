@@ -1,0 +1,120 @@
+.header-iba{
+    width: 100%; 
+    background-color:map-get($colors,yellow); 
+    height: 384px; 
+    padding-top: 64px; 
+    background-image: url(assets/images/bg/illu_02.png);
+    background-repeat: no-repeat;
+    article{
+        max-width: 64em;
+        margin: 0 auto;
+        height: 100%;   
+        h1{
+            margin-bottom: 16px;
+        }
+        div{
+            // atoms/buttons/cta-white
+            button{
+                margin-right: 2px; 
+                letter-spacing: 0.08em; 
+            }   
+        }
+    }
+}
+
+.header-iba-wissen{
+    background-image: url(assets/images/bg/illu_02.png);
+    @extend .header-iba;
+}
+
+.header-iba-struktur{
+    background-image: url(assets/images/bg/illu_02.png);
+    @extend .header-iba;
+}
+
+.header-iba-process{
+    background-image: url(assets/images/bg/illu_02.png);
+    @extend .header-iba;
+}
+
+.header-iba-netzwerk{
+    background-image: url(assets/images/bg/illu_02.png);
+    @extend .header-iba;
+}
+
+
+//  Header Veranstaltungen, Dokumentation, Mediathek
+
+.header-veranstaltungen {
+    width: 100%; 
+    padding-top: 64px; 
+    article{
+        max-width: 64em;
+        margin: 0 auto;
+        height: 100%;   
+        h1{
+            margin-bottom: 16px;
+        }
+        div{
+            // >> atoms/buttons/cta-white
+            button{
+                margin-right: 2px; 
+            }   
+        }
+    }
+}
+
+
+
+.header-dokumentation {
+    width: 100%; 
+    padding-top: 64px; 
+    article{
+        max-width: 64em;
+        margin: 0 auto;
+        height: 100%;   
+        h1{
+            margin-bottom: 16px;
+        }
+        div{
+            // >> atoms/buttons/cta-white
+            button{
+                margin-right: 2px; 
+            }   
+        }
+        p{  
+            max-width: 768px; 
+            margin: 128px auto 0 auto; 
+        }
+
+    }
+}
+
+
+.header-mediathek {
+    width: 100%; 
+    padding-top: 64px; 
+    background-image: url(assets/images/bg/typo_01.svg);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: contain;
+    article{
+        max-width: 64em;
+        margin: 0 auto;
+        height: 100%;   
+        h1{
+            margin-bottom: 16px;
+        }
+        div{
+            // >> atoms/buttons/cta-white
+            button{
+                margin-right: 2px; 
+            }   
+        }
+        p{  
+            max-width: 768px; 
+            margin: 128px auto 0 auto; 
+        }
+
+    }
+}

@@ -1,0 +1,39 @@
+.themen-filter-container{
+    z-index: 3; 
+    background: white;
+    width: 100%; 
+    position: fixed;
+    top: 88px; 
+    left: 0;
+    padding: 16px;  
+    .themen-filter{
+    
+        display: flex;
+        align-items: baseline; 
+        max-width: 1024px; 
+        margin: 0 auto; 
+        h2{
+            margin-right: 8px; 
+        }
+        .cta-small-white, .cta-rounded{
+            margin-right: 8px; 
+        }
+        .right{
+            margin-left: auto; 
+        }
+    }
+}
+
+
+
+
+.themen-overlay{ 
+    width: 100%; 
+    background-color: map-get($colors, white);
+    box-shadow: 0px 10px 10px 0 rgba(0,0,0,0.2);
+    position: fixed; 
+    top: 152px; 
+    left: 0; 
+    z-index: 3; 
+    padding-bottom: 16px; 
+}

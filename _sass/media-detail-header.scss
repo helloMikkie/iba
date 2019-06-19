@@ -1,0 +1,39 @@
+
+// Hero Header Projekt Detail
+
+// Hero Header Veranstaltung Detail
+.media-large-header{
+    max-width: 64em;
+    margin: 0px auto ; 
+    position: relative;  
+    height: 512px; 
+    .veranstaltung-card-detail {
+        @include gradient(yellow);
+        position: absolute; 
+        transform: translateY(50%);
+        z-index: 1;
+        width: 256px; 
+        height: 256px; 
+        border-radius: 2px;
+        padding: 4px; 
+        display: flex;
+        align-items: center;
+        .veranstaltung-text{
+            text-align: center;
+            h2{
+                margin-bottom: 16px; 
+             }
+            }
+        }
+    .image{
+        overflow: hidden; 
+        width: 87.5%; 
+        height: 512px;
+        position: absolute; 
+        right: 0;
+        background-image: url(assets/images/media/media-header.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+}

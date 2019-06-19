@@ -1,0 +1,103 @@
+// fonts
+
+@font-face {
+	font-family: 'Neuzeit-regular';
+	src: url('assets/fonts/neuzeit-regular/neuzeit-grotesk.eot');
+	src: url('assets/fonts/neuzeit-regular/neuzeit-grotesk.woff') format('woff'),
+	     url('assets/fonts/neuzeit-regular/neuzeit-grotesk.ttf') format('truetype'),
+	     url('assets/fonts/neuzeit-regular/neuzeit-grotesk.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Neuzeit-light';
+	src: url('assets/fonts/neuzeit-light/neuzeit-grotesk-light.eot');
+	src: url('assets/fonts/neuzeit-light/neuzeit-grotesk-light.woff') format('woff'),
+	     url('assets/fonts/neuzeit-light/neuzeit-grotesk-light.ttf') format('truetype'),
+	     url('assets/fonts/neuzeit-light/neuzeit-grotesk-light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Neuzeit-bold';
+	src: url('assets/fonts/neuzeit-bold/neuzeit-grotesk-bold.eot');
+	src: url('assets/fonts/neuzeit-bold/neuzeit-grotesk-bold.woff') format('woff'),
+	     url('assets/fonts/neuzeit-bold/neuzeit-grotesk-bold.ttf') format('truetype'),
+	     url('assets/fonts/neuzeit-bold/neuzeit-grotesk-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+//  color, background, gradients
+
+$colors:(
+    yellow: #f8e71c,
+    dark-yellow: #f3df00,
+    black:#000,
+    dark-gray: #6D6D67, 
+    mid-gray: #9E9E94 ,
+    light-gray: #DADAD1 ,
+    pale-white: #F2F2EB,
+    white: #ffffff ,
+);
+
+
+// layout
+
+$spaces:(
+    xx-small: 0.5em,
+    x-small: 1em,
+    small: 2em,
+    normal: 3em,
+    medium: 4em,
+    large: 8em,
+    x-large: 16em,
+);
+
+$sizes:(
+    
+);
+
+// Typography
+
+$fontFamilies:(
+    regular: Neuzeit-regular,
+    light: Neuzeit-light,
+    bold: Neuzeit-bold,
+);
+
+$fontSizes:(
+    x-small: 0.75em,
+    small: 0.875em,
+    base: 1em,
+    medium: 1.375em,
+    large: 2em,
+    x-large: 3em,
+    xx-large: 4em,
+    mega: 6em,
+);
+
+$lineSpacing:(
+    0: 1em,
+    1: 1.1666em,
+    2: 1.125em,
+    3: 1.25em,
+    4: 1.75em,
+    5: 2em, 
+);
+
+$tracking: (
+    x-tight: -0.15em,
+    tight: 0.03em,
+    normal: 0.05em,
+    tracked: 0.09em,
+    x-tracked: 0.15em,
+);
+
+$wordSpacings: (
+    normal: -0.08em,
+);
+

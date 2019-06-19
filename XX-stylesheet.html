@@ -1,0 +1,99 @@
+---
+layout: default
+title: stylesheet
+---
+
+<h1>Submenues</h1>
+<section style="margin-bottom: 400px; ">
+
+<!-- <div style="display: none;"> -->
+    {{ site.menu | where:'title', 'submenu-iba'}}
+</div>
+
+<div style="display: none;">
+    {{ site.menu | where:'title', 'submenu-mediathek'}}
+</div>
+
+<div style="display: none;">
+    {{ site.menu | where:'title', 'submenu-projekte'}}
+</div>
+<div style="display: none;">
+    {{ site.menu | where:'title', 'submenu-veranstaltungen'}}
+</div>
+</section>
+
+<h1>Themen- Overlay</h1>
+<!-- {{ site.components | where:'title', 'themen-overlay'}} -->
+
+<h1>Boxes</h1>
+
+{{ site.components | where:'title', 'box-download'}}
+{{ site.components | where:'title', 'box'}}
+
+<h1>Kalender Boxes</h1>
+{{ site.components | where:'title', 'box-kalender-yellow'}}
+{{ site.components | where:'title', 'box-kalender-dark-gray'}}
+{{ site.components | where:'title', 'box-kalender-mid-gray'}}
+{{ site.components | where:'title', 'box-kalender-light-gray'}}
+{{ site.components | where:'title', 'box-kalender-pale-white'}}
+
+
+<h1>Statements</h1>
+{{ site.components | where:'title', 'statements-image'}}
+{{ site.components | where:'title', 'statements'}}
+
+<h1>Slider</h1>
+{{ site.components | where:'title', 'image-slider'}}
+{{ site.components | where:'title', 'process-slider'}}
+
+
+<h1>Lists</h1>
+{{ site.components | where:'title', 'list-statuslabel'}}
+{{ site.components | where:'title', 'list'}}
+{{ site.components | where:'title', 'table-list'}}
+{{ site.components | where:'title', 'list-button'}}
+{{ site.components | where:'title', 'table-list-aufsichtsrat'}}
+{{ site.components | where:'title', 'table-sponsoren'}}
+
+
+<h1>Subtitles</h1>
+{{ site.components | where:'title', 'media-title-lab'}}
+{{ site.components | where:'title', 'media-title-summit'}}
+{{ site.components | where:'title', 'media-title-logbuch'}}
+{{ site.components | where:'title', 'media-title-magazin'}}
+
+
+
+</section>
+<h1>Project-Cards</h1>
+<section style="display: flex; flex-wrap: wrap;">
+    {{ site.cards | where:'title', 'project-cards'}}
+    {{ site.cards | where:'title', 'project-overlay-card'}}
+    
+</section>
+
+<section>
+{{ site.cards | where:'title', 'card-wrapper'}}
+</section>
+
+<h1>Lightbox</h1>
+{{ site.components | where:'title', 'lightbox'}}
+
+<h1>Buttons</h1>
+
+<button class="cta-small-white">Download</button>
+<button class="cta-small-yellow">Download</button>
+<button class="cta-small-black">Download</button>
+
+<button class="cta-large-white">Download</button>
+<button class="cta-large-yellow">Download</button>
+<button class="cta-large-black">Download</button>
+
+<div>
+    <button class="chip-small-left">Übersicht</button>
+    <button class="chip-small-right">Projekte Wissenschaft</button>
+</div>
+
+<button class="cta-rounded">?</button>
+
+<button class="cta-maximize"> </button>

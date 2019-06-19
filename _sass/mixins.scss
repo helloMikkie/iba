@@ -1,0 +1,104 @@
+
+// System: Background und Color
+
+@mixin skin($class) {
+    @if $class == yellow {
+        background-color: map-get($colors, yellow);
+        color: map-get($colors, black);
+    }  
+    @else if $class == dark-yellow {
+        background-color: map-get($colors, dark-yellow);
+        color: map-get($colors, black);
+    }  
+    @else if $class == black-white {
+        background-color: map-get($colors, black);
+        color: map-get($colors, white);
+    } 
+    @else if $class == black-yellow {
+        background-color: map-get($colors, black);
+        color: map-get($colors, yellow);
+    } 
+    @else if $class == dark-gray {
+        background-color: map-get($colors, dark-gray);
+        color: map-get($colors, white);
+    } 
+    @else if $class == mid-gray {
+        background-color: map-get($colors, mid-gray);
+        color: map-get($colors, white);
+    } 
+    @else if $class == light-gray {
+        background-color: map-get($colors, light-gray);
+        color: map-get($colors, black);
+    }
+    @else if $class == pale-white {
+        background-color: map-get($colors, pale-white);
+        color: map-get($colors, black);
+    } 
+    @else if $class == white {
+        background-color: map-get($colors, white);
+        color: map-get($colors, black);
+    } 
+    @else {
+        background-color: red;
+        color: red;
+    }
+}
+
+@mixin gradient($class) {
+    @if $class == yellow {
+        background-image: linear-gradient(150deg, #F8E71C 40%, #FAF79E 100%);
+        color: map-get($colors, black);
+    } 
+    @else if $class == dark-gray {
+        background-image: linear-gradient(144deg, #6D6D6D 43%, #969595 100%);   
+        color: map-get($colors, white);
+    } 
+    @else if $class == mid-gray {
+        background-image: linear-gradient(146deg, #9E9E94 47%, #C5C4BB 100%);   
+        color: map-get($colors, white);
+    } 
+    @else if $class == light-gray {
+        background-image: linear-gradient(151deg, #DADAD1 36%, #E9E9E9 100%);   
+        color: map-get($colors, black);
+    } 
+    @else if $class == pale-white {
+        background-image: linear-gradient(149deg, #F2F2EB 32%, #F9F9F9 100%);   
+        color: map-get($colors, black);
+    } 
+}   
+
+
+//  Typography
+
+@mixin typeRatio($class) {
+    @if $class == x-small {
+        font-size: map-get($fontSizes, x-small);
+        line-height: map-get($lineSpacing,1);
+       
+        
+    }
+     @else if $class== small {
+        font-size: map-get($fontSizes, small);
+        line-height: map-get($lineSpacing,2);
+        
+     }
+     @else if $class == base {
+        font-size: map-get($fontSizes, base);
+        line-height: map-get($lineSpacing,4);
+     }
+    @else if $class == medium {
+        font-size: map-get($fontSizes, medium);
+        line-height: map-get($lineSpacing,3);
+     }
+     @else if $class == large {
+        font-size: map-get($fontSizes, large);
+        line-height: map-get($lineSpacing,3);
+ 
+     }
+     @else if $class == xx-large {
+        font-size: map-get($fontSizes, xx-large);
+        line-height: map-get($lineSpacing,0);
+    
+     }
+}
+

@@ -1,0 +1,32 @@
+.horizontal-process-scroll-wrapper{
+    width: 100%;  
+    overflow: auto;
+    white-space: nowrap;
+    padding-bottom: map-get($spaces, medium); 
+
+    .process-step {
+      position: relative; 
+      width: 25%; 
+      display: inline-block;
+      vertical-align: top;
+      padding-left:  16px; 
+      padding-right: 128px; 
+      h4{
+        margin-bottom: 32px; 
+      }
+      p{
+        margin-bottom: 8px;  
+        white-space: normal;
+        line-height: 1.2;
+      }
+    }
+    
+    .icon-process{
+      position: absolute; 
+      top: 0;
+      right: 16px; 
+      svg{
+      fill: map-get($colors, yellow); 
+      }
+    }
+  }

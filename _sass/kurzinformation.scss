@@ -1,0 +1,31 @@
+.kurzinformation{
+    box-shadow: 0 9px 11px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    background-color: map-get($colors, white );
+    position: relative; 
+    padding-bottom: 32px; 
+    h5{
+        margin-bottom: 32px; 
+    }
+    .info{
+        margin: 32px 0; 
+        span{
+            margin-right: 16px; 
+        }
+    }
+    .ikon-close{
+        position: absolute; 
+            top:8px; 
+            right: -8px; 
+            transform: translateX(-50%);
+            width: 40px; 
+            stroke-width: 1.5px; 
+            stroke: map-get($colors,dark-gray ); 
+            cursor: pointer;
+            transition: all .2s; 
+            &:hover{
+                stroke: map-get($colors,mid-gray );  
+            }
+    }
+    
+}
