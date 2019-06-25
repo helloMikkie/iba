@@ -21,7 +21,7 @@
     @extend .cta;
     @include typeRatio(base);
     padding: 0.6em 1.8em 0.4em 1.8em ;
-    letter-spacing: map-get($tracking,normal);
+    letter-spacing: map-get($tracking,tracked);
 }
 
 // Buttons
@@ -77,11 +77,13 @@
 .cta-large-black{
     @extend .cta-large;
     @include skin(black-white);
-    border: none; 
+    border: none;
     &:hover{
         color:map-get($colors, light-gray);   
     }
 }
+
+
 
 // Chips
 
@@ -133,9 +135,9 @@
     @extend .cta-small;
     border: none; 
     border-radius: 100%;
-    width: 32px; 
-    height: 32px;  
-    padding: 4px 4px 8px 4px; 
+    width: 24px; 
+    height: 24px;  
+    padding:1px 0 0 2px; 
     text-align: center; 
     cursor: pointer; 
     @include skin(yellow);

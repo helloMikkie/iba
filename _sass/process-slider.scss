@@ -30,3 +30,58 @@
       }
     }
   }
+
+// Start Prozess Slider IBA neu
+
+  .horizontal-process-scroll-wrapper--start{
+    width: 100%;  
+    overflow: auto;
+    white-space: nowrap;
+    padding-bottom: map-get($spaces, medium); 
+
+    .process-step {
+      position: relative; 
+      width: 256px;
+      height: 256px; 
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 16px; 
+      padding-left:  16px; 
+      padding-right: 8px; 
+      margin-right: 32px; 
+      -webkit-hyphens: manual;
+      hyphens: manual;
+      h4{
+        margin-bottom: 32px; 
+        color: map-get($colors,dark-gray );
+      }
+      p{
+        margin-bottom: 16px;  
+        white-space: normal;
+        line-height: 1.2;
+        color: map-get($colors,black );
+      }
+      .text{
+        color: map-get($colors, dark-gray );
+        line-height: 1.5; 
+      }
+    }
+    
+    .icon-process{
+      position: absolute; 
+      top: 16px;
+      right: -16px; 
+      svg{
+      fill: map-get($colors, yellow); 
+      }
+    }
+  }
+
+.processStep--active{
+  @extend .process-step;
+  background-color: map-get($colors,yellow );
+  .text{
+    color: map-get($colors, black );
+    line-height: 1.5; 
+  }
+}

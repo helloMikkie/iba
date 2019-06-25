@@ -1,0 +1,116 @@
+
+.start-hero{
+    position: relative;
+    width: 100%; 
+    // background-color: rgba(0,0,0,0.3); 
+    height: 70vh; 
+    margin-bottom: 32px; 
+
+
+    img{
+        height: 100%; 
+        width: 100%; 
+        object-fit: cover;
+    }
+    .title-wrapper{
+        h1{
+            position: absolute;
+            left: calc(100vw - 80vw);
+            bottom: 0; 
+            transform: translateY(-50%);
+            font-family: 'Neuzeit-bold';
+            font-size: 12vh; 
+            text-transform: uppercase;
+            color: map-get($colors, black );
+            letter-spacing: 0.08em; 
+            line-height: 0.8; 
+        }
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+// Image Slider Projekt-Auswahl
+
+.start-gallery{
+    background-color: map-get($colors, black);
+    padding: 88px 0 120px 0; 
+    position: relative; 
+    .right{
+        position: absolute;
+        top: 50%; 
+        right: 8px; 
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;    
+        stroke: map-get($colors, dark-gray ); 
+        stroke-width:1.5;
+        padding: 6px 8px;
+        transition: background-color 0.2s;
+        cursor: pointer;
+        &:hover{
+            background-color: map-get($colors, pale-white); 
+            
+        } 
+    }
+    .left{
+        position: absolute;
+        top: 50%; 
+        left: 8px; 
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;    
+        stroke: map-get($colors, dark-gray ); 
+        stroke-width:1.5;
+        padding: 6px 8px;
+        transition: background-color 0.2s;
+        cursor: pointer;
+        &:hover{
+            background-color: map-get($colors, pale-white); 
+            
+        } 
+    }
+
+    .indicator{
+        position: absolute;
+        bottom: 16px; 
+        left: 50%; 
+        transform: translateX(-50%);
+        display: flex; 
+        justify-content: space-between;
+        width: 120px; 
+        div{
+            width: 6px; 
+            height: 6px; 
+            background-color: map-get($colors, pale-white);
+            border-radius: 100%; 
+           
+        }
+        .active{
+            background-color: map-get($colors, dark-gray)
+        }
+    }
+}
+
+
+.cta-large-start{
+    @extend .cta-large;
+    @include skin(black-white);
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%);
+
+    border: none;
+    color: map-get($colors, yellow);  
+    &:hover{
+        color:map-get($colors, light-gray);   
+    }
+}
