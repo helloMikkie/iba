@@ -1,0 +1,51 @@
+.plain-text{
+        margin-bottom: 240px; 
+    h2{
+        font-family:'Neuzeit-bold', sans-serif; 
+        font-size: map-get($fontSizes, large );
+        color: map-get($colors,black );
+        margin-bottom: 32px; 
+    }
+    h3{
+        font-family:'Neuzeit-bold', sans-serif; 
+        font-size: map-get($fontSizes, medium );
+        color: map-get($colors,black );
+    }
+    p{
+        margin-bottom: 32px; 
+        span{
+            font-family: 'Neuzeit-bold', sans-serif;
+            color: map-get($colors,black );
+          
+        }
+        a{
+            text-decoration: none;
+            border-bottom: 1px solid map-get($colors,black );
+            color: map-get($colors,black );
+            transition: color 0.2s;
+            &:hover{
+                color: map-get($colors,dark-gray );
+            }
+        }
+        
+    }
+    .text-bold{
+        font-family:'Neuzeit-bold', sans-serif;
+        color: map-get($colors,black );
+        margin-bottom: 0;
+    }
+    ul{
+        margin-bottom: 32px; 
+        li{
+            a{
+            text-decoration: none;
+            border-bottom: 1px solid map-get($colors,black );
+            color: map-get($colors,black );
+            transition: color 0.2s;
+            &:hover{
+                color: map-get($colors,dark-gray );
+            }
+            }
+        }
+    }
+}

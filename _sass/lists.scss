@@ -4,7 +4,21 @@ ul.list{
     margin: 2em 0; 
     li{
         border-bottom: 2px solid map-get($colors,yellow );
-        padding: 1em 0; 
+        padding: 1em 0;
+        span{
+            margin-right: 16px; 
+            a{
+                text-decoration: none;
+                color: map-get($colors, black );
+                font-family: 'Neuzeit-bold', sans-serif;;
+                border-bottom: 1px solid black; 
+                transition: color 0.2s; 
+                &:hover{
+                    color: map-get($colors, dark-gray ); 
+                }
+            }
+
+        } 
     }
     
 }
@@ -40,6 +54,10 @@ td {
     border-bottom: 2px solid map-get($colors,yellow );
     padding: 16px 0; 
     
+}
+
+th{
+    text-align: left; 
 }
 
 // Sponsoren
