@@ -17,14 +17,18 @@ layout: default
 <div style="display: none;">
     {{ site.menu | where:'title', 'submenu-projekte'}}
 </div>
+
 <div style="display: none;">
     {{ site.menu | where:'title', 'submenu-veranstaltungen'}}
 </div>
+<div style="">
+        {{ site.menu | where:'title', 'submenu-suche'}}
+    </div>
+
 </section>
 
-<h1>Themen- Overlay</h1>
-<!-- {{ site.components | where:'title', 'themen-overlay'}} -->
 
+<h1>Themen- Overlay</h1>
 <h1>Boxes</h1>
 
 {{ site.components | where:'title', 'box-download'}}
@@ -75,6 +79,11 @@ layout: default
 <section>
 {{ site.cards | where:'title', 'card-wrapper'}}
 </section>
+
+
+<section>
+    {{ site.cards | where:'title', 'card-test-grafik'}}
+    </section>
 
 <h1>Lightbox</h1>
 {{ site.components | where:'title', 'lightbox'}}

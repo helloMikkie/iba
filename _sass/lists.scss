@@ -9,12 +9,12 @@ ul.list{
             margin-right: 16px; 
             a{
                 text-decoration: none;
-                color: map-get($colors, black );
+                color: map-get($colors, dark-gray );
                 font-family: 'Neuzeit-bold', sans-serif;;
-                border-bottom: 1px solid black; 
-                transition: color 0.2s; 
+                border-bottom: 2px solid yellow; 
+                transition: color 0.2s;
                 &:hover{
-                    color: map-get($colors, dark-gray ); 
+                    color: map-get($colors, black ); 
                 }
             }
 

@@ -2,50 +2,78 @@
         margin-bottom: 240px; 
     h2{
         font-family:'Neuzeit-bold', sans-serif; 
-        font-size: map-get($fontSizes, large );
+        font-size: map-get($fontSizes, medium );
         color: map-get($colors,black );
-        margin-bottom: 32px; 
+        margin: 64px 0 32px; 
+        text-transform: uppercase; 
+        text-align: center; 
     }
     h3{
         font-family:'Neuzeit-bold', sans-serif; 
-        font-size: map-get($fontSizes, medium );
+        font-size: map-get($fontSizes, base );
         color: map-get($colors,black );
+        text-transform: uppercase; 
+        text-align: center;
+        margin: 32px 0; 
     }
     p{
         margin-bottom: 32px; 
+        &:last-child{
+            margin-bottom: 0; 
+        }
         span{
             font-family: 'Neuzeit-bold', sans-serif;
-            color: map-get($colors,black );
+            // color: map-get($colors,black );
+            letter-spacing: map-get($tracking, tight )
           
         }
         a{
             text-decoration: none;
-            border-bottom: 1px solid map-get($colors,black );
-            color: map-get($colors,black );
+            border-bottom: 2px solid map-get($colors,yellow );
+            color: map-get($colors,dark-gray );
             transition: color 0.2s;
             &:hover{
-                color: map-get($colors,dark-gray );
+                color: map-get($colors,black );
             }
         }
         
     }
+    blockquote{
+        font-family:'Neuzeit-regular', sans-serif; 
+        font-size: map-get($fontSizes, medium );
+        color: map-get($colors,dark-gray );
+        margin: 32px 0;
+        // background-color: yellow; 
+        padding: 32px; 
+        border-top: 2px solid map-get($colors,yellow );
+        border-bottom: 2px solid map-get($colors,yellow ); 
+        span {
+            font-family:'Neuzeit-bold', sans-serif; 
+            font-size: 12px;
+            letter-spacing: 0.08em; 
+            text-transform: uppercase;
+            margin-left: 16px; 
+        }
+    }
     .text-bold{
         font-family:'Neuzeit-bold', sans-serif;
         color: map-get($colors,black );
+        letter-spacing: map-get($tracking, tight );
         margin-bottom: 0;
     }
     ul{
-        margin-bottom: 32px; 
+        margin-bottom: 16px; 
         li{
             a{
             text-decoration: none;
-            border-bottom: 1px solid map-get($colors,black );
-            color: map-get($colors,black );
+            border-bottom: 2px solid map-get($colors,yellow );
+            color: map-get($colors,dark-gray );
             transition: color 0.2s;
             &:hover{
-                color: map-get($colors,dark-gray );
+                color: map-get($colors,black );
             }
             }
         }
+        
     }
 }

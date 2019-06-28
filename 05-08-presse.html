@@ -1,0 +1,29 @@
+---
+title: Presse
+layout: page
+---
+
+<section class="wrapper-topMargin">
+<!-- Header -->
+
+{{ site.components | where:'title', 'header-presse'}}
+
+</section>
+
+
+
+{{ site.components | where:'title', 'box' }}
+
+
+<!-- Aktuelle Pressemitteilungen -->
+<h2 class="medium-uc-bold c-black center topMargin">Aktuelle Pressemitteilungen</h2>
+
+{{ site.cards | where:'title', 'card-wrapper-presse' }}
+
+<button class="cta-large-black center-button topMargin">zum Pressearchiv</button>
+
+<!-- Aktuelle Bildergalerie -->
+
+<h2 class="medium-uc-bold c-black center margin-normal">Bildergalerie</h2>
+
+{{ site.cards | where:'title', 'card-wrapper-bildergalerie' }}

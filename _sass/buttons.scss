@@ -175,6 +175,12 @@
     z-index: 10; 
 }
 
+.center-button{
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .chip-small-back{
     @extend .cta-small;
