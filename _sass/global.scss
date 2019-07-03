@@ -72,6 +72,17 @@
     }
   }
 
+  .ikon-outline-suche{
+    @extend %svg;
+    fill: none;
+    transition: stroke 0.3s;
+    cursor: pointer; 
+    stroke: map-get($colors,white);
+    &:hover{
+        stroke:map-get($colors, light-gray);
+    }
+  }
+
 
 
 // Utilities für Backgraund Image

@@ -9,7 +9,7 @@
     align-items:flex-start;
     background-color: #fff;
     width: 100%;
-    height: 88px; 
+    height: 60px; 
     // height: 60px; 
     padding: 0 8px; 
     z-index: 3; 
@@ -38,9 +38,9 @@
 
 .menu-wrapper{
     // border: 1px olid red; 
-    width: 1024px;
- 
-    margin: 0px auto 64px ;  
+    width: 100%;
+
+    // margin: 0px auto 64px ;  
     display: flex;
     justify-content: space-between;
     align-items:flex-start;
@@ -59,9 +59,13 @@
 
 
 .language{ 
-    margin-top: 24px; 
-    margin-right: 24px; 
-    min-width: 48px; 
+    margin-top: 16px; 
+    margin-right: 24px;
+    margin-left: 8px;  
+    min-width: 48px;
+    a{
+        color: black; 
+    } 
 }
 
 .search{
@@ -72,7 +76,10 @@
 .logo{
     margin-top: 4px;
     // transform: scale(0.65) translateY(-8px) ; 
-  
+  img{
+      height: 56px;
+      padding-top: 4px;  
+  }
 }
 
 .sub-menu-wrapper{
@@ -104,13 +111,15 @@
 // List 
 
 .menu-list-item{
+    list-style: none; 
     padding-top: 18px; 
-    padding-bottom: 12px; 
+    padding-left: 8px; 
     height: 48px; 
     border-bottom: 2px solid map-get($colors, yellow );
     line-height: 1;
     letter-spacing: 0.15em;
     transition: all 0.2s;
+    font-size: 12px; 
     cursor:pointer;
     &:hover{
         color:map-get($colors, black );
@@ -118,3 +127,18 @@
     }
 }
 
+
+.responsive-menu-container{
+    margin-top: 60px; 
+}
+
+.main-item{
+    width: 100%; 
+    padding: 24px 8px 8px 8px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-size: 16px; 
+    color: black; 
+    border-bottom: 1px solid map-get($colors, black );
+}

@@ -1,3 +1,28 @@
+
+
+.statement{
+    padding: 32px;
+    @include gradient(yellow);
+    
+    
+    .statement-wrapper{
+        max-width: 1024px;
+        margin: 0 auto; 
+        position: relative; 
+        .inner-wrapper{
+            margin: 0 auto; 
+            max-width: 48em; 
+            .text{
+                margin-bottom: 32px; 
+            }
+        }
+        
+    }
+    
+}
+
+
+
 .statement-image{
     padding: 32px;
     @include gradient(yellow);
@@ -36,25 +61,3 @@
     }
     
 }
-
-.statement{
-    padding: 32px;
-    @include gradient(yellow);
-    
-    
-    .statement-wrapper{
-        max-width: 1024px;
-        margin: 0 auto; 
-        position: relative; 
-        .inner-wrapper{
-            margin: 0 auto; 
-            max-width: 48em; 
-            .text{
-                margin-bottom: 32px; 
-            }
-        }
-        
-    }
-    
-}
-
